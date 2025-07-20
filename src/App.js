@@ -6,7 +6,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <p>Color picker</p>
+        <p> Trending color palletes</p>
       </main>
     </div>
   );
