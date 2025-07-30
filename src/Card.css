@@ -3,9 +3,18 @@
   border: 2px red solid;
   display: flex;
   height: 100px;
-  width: 330px;
+  width: 300px;
   margin-top: 70px;
   margin-left: 30px;
   justify-content: center;
   align-items: stretch;
+}
+
+.card {
+  display: flex;
+}
+
+.color-box {
+  width: 60px;
+  height: 100px;
 }
