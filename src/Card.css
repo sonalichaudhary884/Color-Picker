@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  border: 2px red solid;
+  border: 2px black solid;
   display: flex;
   height: 100px;
   width: 300px;
@@ -8,10 +8,12 @@
   margin-left: 30px;
   justify-content: center;
   align-items: stretch;
+  border-radius: 8px;
 }
 
 .card {
   display: flex;
+  border-radius: 8px;
 }
 
 .color-box {
