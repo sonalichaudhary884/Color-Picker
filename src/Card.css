@@ -3,9 +3,7 @@
   border: 2px black solid;
   display: flex;
   height: 100px;
-  width: 300px;
-  margin-top: 70px;
-  margin-left: 30px;
+  width: calc(25% - 12px);
   justify-content: center;
   align-items: stretch;
   border-radius: 8px;
@@ -17,6 +15,22 @@
 }
 
 .color-box {
-  width: 60px;
-  height: 100px;
+  width: 20%;
+  height: 100%;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.color-box:hover {
+  width: 120px;
+}
+
+.card :first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.card :last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }

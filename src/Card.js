@@ -9,13 +9,24 @@ const colors = [
 ];
 const Card = () => {
   return (
-    <div className="card">
+    <div
+      style={{
+        display: "flex",
+        gap: "16px",
+        flexWrap: "wrap",
+        padding: "16px",
+      }}
+    >
       {colors.map((color, index) => (
-        <div
-          key={index}
-          style={{ backgroundColor: color }}
-          className="color-box"
-        ></div>
+        <div className="card" key={index}>
+          {color.map((col, index) => (
+            <div
+              key={index}
+              style={{ backgroundColor: col }}
+              className="color-box"
+            ></div>
+          ))}
+        </div>
       ))}
     </div>
   );
