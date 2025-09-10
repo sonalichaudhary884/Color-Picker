@@ -14,6 +14,9 @@ function App() {
         </p>
       </main>
       <Card />
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }

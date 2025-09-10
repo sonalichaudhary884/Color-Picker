@@ -1,5 +1,21 @@
-import React from "react";
 import "./Card.css";
+import React, { useState } from "react";
+import { getContrastColor } from "./utils";
+
+const Colorpallete = ({ col }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  console.log(isHovered);
+  return (
+    <div
+      style={{ backgroundColor: col, color: getContrastColor(col) }}
+      className="color-box"
+      onMouseOver={() => setIsHovered(true)}
+      onMouseOut={() => setIsHovered(false)}
+    >
+      {isHovered && col}
+    </div>
+  );
+};
 
 const colors = [
   ["red", "yellow", "green", "purple", "brown"],
@@ -20,11 +36,7 @@ const Card = () => {
       {colors.map((color, index) => (
         <div className="card" key={index}>
           {color.map((col, index) => (
-            <div
-              key={index}
-              style={{ backgroundColor: col }}
-              className="color-box"
-            ></div>
+            <Colorpallete key={index} col={col} />
           ))}
         </div>
       ))}
